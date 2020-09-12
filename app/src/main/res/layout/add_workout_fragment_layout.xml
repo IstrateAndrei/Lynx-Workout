@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusable="true"
+    android:focusableInTouchMode="true">
+
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/awf_left_vgl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.15" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/awf_right_vgl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.85" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/awf_workout_name_til"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="@id/awf_right_vgl"
+        app:layout_constraintStart_toStartOf="@id/awf_left_vgl"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <EditText
+            android:id="@+id/awf_workout_name_et"
+            style="@style/defaultEditField"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableStart="@drawable/ic_baseline_title_16"
+            android:drawablePadding="5dp"
+            android:hint="@string/workout_title_string"
+            android:inputType="textShortMessage" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/awf_workout_calories_til"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toEndOf="@id/awf_right_vgl"
+        app:layout_constraintStart_toStartOf="@id/awf_left_vgl"
+        app:layout_constraintTop_toBottomOf="@id/awf_workout_name_til">
+
+        <EditText
+            android:id="@+id/awf_workout_calories_et"
+            style="@style/defaultEditField"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableStart="@drawable/ic_baseline_whatshot_16"
+            android:drawablePadding="5dp"
+            android:hint="@string/burned_calories_string"
+            android:inputType="textShortMessage" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/awf_workout_duration_til"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toEndOf="@id/awf_right_vgl"
+        app:layout_constraintStart_toStartOf="@id/awf_left_vgl"
+        app:layout_constraintTop_toBottomOf="@id/awf_workout_calories_til">
+
+        <EditText
+            android:id="@+id/awf_workout_duration_et"
+            style="@style/defaultEditField"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableStart="@drawable/ic_baseline_access_time_16"
+            android:drawablePadding="5dp"
+            android:hint="@string/duration_string"
+            android:inputType="textShortMessage" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/awf_workout_date_til"
+        android:layout_width="0dp"
+        android:layout_height="?attr/actionBarSize"
+        android:layout_marginTop="8dp"
+        android:clickable="true"
+        android:focusable="true"
+        app:layout_constraintEnd_toEndOf="@id/awf_right_vgl"
+        app:layout_constraintStart_toStartOf="@id/awf_left_vgl"
+        app:layout_constraintTop_toBottomOf="@id/awf_workout_duration_til">
+
+        <EditText
+            android:id="@+id/awf_workout_date_et"
+            style="@style/defaultEditField"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clickable="false"
+            android:drawableStart="@drawable/ic_baseline_calendar_today_16"
+            android:drawablePadding="5dp"
+            android:focusable="false"
+            android:hint="@string/workout_date_string" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:id="@+id/awf_pick_photo_label_tv"
+        style="@style/defaultTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/add_photo_to_workout_string"
+        android:textColor="@color/colorAccent"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@id/awf_left_vgl"
+        app:layout_constraintTop_toBottomOf="@id/awf_workout_date_til" />
+
+
+    <ImageView
+        android:id="@+id/awf_camera_iv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:padding="5dp"
+        android:src="@drawable/ic_baseline_photo_camera_24"
+        app:layout_constraintStart_toEndOf="@id/awf_pick_photo_label_tv"
+        app:layout_constraintTop_toTopOf="@id/awf_pick_photo_label_tv"
+        app:layout_constraintBottom_toBottomOf="@id/awf_pick_photo_label_tv"
+        app:tint="@color/colorAccent" />
+
+    <ImageView
+        android:id="@+id/awf_gallery_iv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:padding="5dp"
+        android:src="@drawable/ic_baseline_collections_24"
+        app:layout_constraintStart_toEndOf="@id/awf_camera_iv"
+        app:layout_constraintTop_toTopOf="@id/awf_pick_photo_label_tv"
+        app:layout_constraintBottom_toBottomOf="@id/awf_pick_photo_label_tv"
+        app:tint="@color/colorAccent" />
+
+    <ImageView
+        android:id="@+id/awf_picture_iv"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_margin="8dp"
+        android:src="@drawable/ic_profile_placeholder"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="@id/awf_right_vgl"
+        app:layout_constraintStart_toStartOf="@id/awf_left_vgl"
+        app:layout_constraintTop_toBottomOf="@id/awf_gallery_iv" />
+
+    <ProgressBar
+        android:id="@+id/awf_loading_pb"
+        style="?android:attr/progressBarStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toTopOf="@id/awf_save_btn"
+        app:layout_constraintEnd_toEndOf="@id/awf_right_vgl"
+        app:layout_constraintStart_toStartOf="@id/awf_left_vgl"
+        app:layout_constraintTop_toBottomOf="@id/awf_picture_iv" />
+
+    <Button
+        android:id="@+id/awf_save_btn"
+        style="@style/defaultButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:text="@string/save_workout_string"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

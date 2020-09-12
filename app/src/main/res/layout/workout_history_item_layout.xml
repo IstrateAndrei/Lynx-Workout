@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    android:elevation="8dp"
+    app:cardCornerRadius="5dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:elevation="8dp">
+
+        <ImageView
+            android:id="@+id/whi_photo_iv"
+            android:layout_width="96dp"
+            android:layout_height="96dp"
+            android:layout_margin="8dp"
+            android:src="@drawable/ic_baseline_image_24"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/whi_workout_name_tv"
+            style="@style/defaultTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@id/whi_photo_iv"
+            app:layout_constraintTop_toTopOf="@id/whi_photo_iv"
+            tools:text="Leg day" />
+
+        <TextView
+            android:id="@+id/whi_calories_tv"
+            style="@style/defaultTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:drawablePadding="5dp"
+            android:textSize="14sp"
+            app:drawableStartCompat="@drawable/ic_baseline_whatshot_16"
+            app:layout_constraintStart_toStartOf="@id/whi_workout_name_tv"
+            app:layout_constraintTop_toBottomOf="@id/whi_workout_name_tv"
+            tools:text="over 9000 Calories" />
+
+        <TextView
+            android:id="@+id/whi_duration_tv"
+            style="@style/defaultTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:drawablePadding="5dp"
+            android:textSize="14sp"
+            app:drawableStartCompat="@drawable/ic_baseline_access_time_16"
+            app:layout_constraintStart_toStartOf="@id/whi_workout_name_tv"
+            app:layout_constraintTop_toBottomOf="@id/whi_calories_tv"
+            tools:text="1h 30min" />
+
+        <TextView
+            android:id="@+id/whi_date_tv"
+            style="@style/defaultTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="8dp"
+            android:alpha="0.6"
+            android:drawablePadding="5dp"
+            android:textSize="14sp"
+            app:drawableStartCompat="@drawable/ic_baseline_calendar_today_16"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="@id/whi_duration_tv"
+            app:layout_constraintTop_toBottomOf="@id/whi_duration_tv"
+            tools:text="2020-11-10 19:00" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.cardview.widget.CardView>

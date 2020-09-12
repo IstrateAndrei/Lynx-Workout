@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "426710464524",
+    "firebase_url": "https://lynx-workout.firebaseio.com",
+    "project_id": "lynx-workout",
+    "storage_bucket": "lynx-workout.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:426710464524:android:4a8e99de124eb983415629",
+        "android_client_info": {
+          "package_name": "com.example.lynx_workout"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "426710464524-78mgdnco73joc1rg93qpvh2k8c9sjgq5.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.lynx_workout",
+            "certificate_hash": "f62eab145dbce1142ccca5fa26ea9a2ed707fda0"
+          }
+        },
+        {
+          "client_id": "426710464524-j0e6p9v6ohhf909c97qgqosb5r0spa0h.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBQW0AF2SJwJuY0e4IJKSeTU91iJ0ZaCK0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "426710464524-j0e6p9v6ohhf909c97qgqosb5r0spa0h.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

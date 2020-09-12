@@ -1,0 +1,53 @@
+<resources>
+    <string name="app_name">Lynx-Workout</string>
+    <string name="action_settings">Settings</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+
+    <!--    Login/Register Strings  -->
+    <string name="email_string">Email</string>
+    <string name="username_string">Username</string>
+    <string name="password_string">Password</string>
+    <string name="confirm_password_string">Confirm Password</string>
+    <string name="login_string">Login</string>
+    <string name="register_string">Register</string>
+    <string name="no_account_can_register_string">Don\'t have an account? <b><font fgcolor='#4b0082'>register here</font></b></string>
+    <string name="complete_fields_warning_string">Complete all fields before!</string>
+    <string name="invalid_email_format_string">Invalid email format!</string>
+    <string name="password_and_confirm_password_different_string">The password and confirm password fields have different values!</string>
+    <string name="registration_completed_string">Registration Completed!</string>
+    <string name="email_verification_message_string">A verification email has been sent. Check your inbox.</string>
+    <string name="error_send_email_verification_message_string">Couldn\'t send verification email.</string>
+    <string name="registration_failed_string">Registration Failed!</string>
+    <string name="unable_to_connect_string">Unable to connect!</string>
+    <string name="accept_terms_and_conditions_string">I have read and accept the terms\n and conditions.</string>
+    <string name="accept_terms_and_conditions_warning_string">Please accept the terms and conditions before registration.</string>
+
+    <!-- Profile settings strings-->
+    <string name="profile_settings_string">Profile Settings</string>
+    <string name="logout_string">Logout</string>
+    <string name="save_changes_string">Save changes</string>
+    <string name="profile_updated_message_string">Profile Updated!</string>
+
+
+    <!--    Add Workout strings-->
+    <string name="save_workout_string">Save workout</string>
+    <string name="add_new_workout_string">Add new workout</string>
+    <string name="workout_title_string">Workout title</string>
+    <string name="workout_date_string">Workout date</string>
+    <string name="burned_calories_string">Burned calories</string>
+    <string name="duration_string">Duration</string>
+    <string name="pick_workout_date_string">Pick workout date</string>
+    <string name="add_photo_to_workout_string">Add workout photo: </string>
+    <string name="new_workout_entry_added_string">New workout entry added!</string>
+    <string name="unable_to_save_workout_string">Unable to save workout!</string>
+
+<!--    Workout details strings-->
+    <string name="workout_date_label_string">Workout date:</string>
+    <string name="burned_calories_label_string">Burned calories:</string>
+    <string name="workout_duration_label_string">Workout duration:</string>
+    <string name="workout_entry_deleted_string">Workout entry deleted!</string>
+    <string name="unable_delete_workout_string">Unable to delete workout</string>
+</resources>

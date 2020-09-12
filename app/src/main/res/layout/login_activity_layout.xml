@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white">
+
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/la_left_vgl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.15" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/la_right_vgl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.85" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/la_email_til"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="108dp"
+        app:layout_constraintEnd_toEndOf="@id/la_right_vgl"
+        app:layout_constraintStart_toStartOf="@id/la_left_vgl"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <EditText
+            android:id="@+id/la_email_et"
+            style="@style/defaultEditField"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/email_string"
+            android:inputType="textEmailAddress" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/la_password_til"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="@id/la_right_vgl"
+        app:layout_constraintStart_toStartOf="@id/la_left_vgl"
+        app:layout_constraintTop_toBottomOf="@id/la_email_til">
+
+        <EditText
+            android:id="@+id/la_password_et"
+            style="@style/defaultEditField"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/password_string"
+            android:inputType="textPassword" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/la_login_btn"
+        style="@style/defaultButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:stateListAnimator="@null"
+        android:text="@string/login_string"
+        app:layout_constraintEnd_toEndOf="@id/la_email_til"
+        app:layout_constraintStart_toStartOf="@id/la_email_til"
+        app:layout_constraintTop_toBottomOf="@id/la_password_til" />
+
+    <TextView
+        android:id="@+id/la_register_msg_tv"
+        style="@style/defaultTextView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:gravity="center"
+        android:text="@string/no_account_can_register_string"
+        app:layout_constraintEnd_toEndOf="@id/la_login_btn"
+        app:layout_constraintStart_toStartOf="@id/la_login_btn"
+        app:layout_constraintTop_toBottomOf="@id/la_login_btn" />
+
+
+    <FrameLayout
+        android:id="@+id/la_fragment_fl"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ProgressBar
+        android:id="@+id/la_progress_bar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/la_register_msg_tv" />
+</androidx.constraintlayout.widget.ConstraintLayout>
