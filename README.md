@@ -23,10 +23,10 @@ Application dependencies:
 
 - Rx java & Rx android
 
--Rx Permissions;
+- Rx Permissions;
 
--Glide;
+- Glide;
 
--Hawk;
+- Hawk;
 
--Anko async;
+- Anko async;
