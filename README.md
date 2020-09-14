@@ -1,8 +1,7 @@
 # Lynx-Workout
 
-<h1> Lynx - Workout Project </h1>
+<h4>Simple project meant as a practical test for Android position. </h4>
 
-Simple project meant as a practical test for Android position. 
 The purpose of the app is to display a history of workouts, allow the user to add a new 
 
 The main features involve
