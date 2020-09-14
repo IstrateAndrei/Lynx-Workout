@@ -20,8 +20,8 @@ The application is integrated with Firebase and uses the following Firebase tool
 * Firebase Storage
 
 Application dependencies:
-*Rx java; Rx android;
-*Rx Permissions;
-*Glide;
-*Hawk;
-*Anko async;
+- Rx java & Rx android
+-Rx Permissions;
+-Glide;
+-Hawk;
+-Anko async;
