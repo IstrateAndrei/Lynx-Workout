@@ -2,7 +2,7 @@
 
 <h4>Simple project meant as a practical test for Android position. </h4>
 
-The purpose of the app is to display a history of workouts, allow the user to add a new 
+The purpose of the app is to display a history of workouts and allow the user to add a new workout.
 
 The main features involve
 1. Authentication: account registration, account verification via email, login, edit username and profile picture;
